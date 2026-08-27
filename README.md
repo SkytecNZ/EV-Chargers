@@ -38,6 +38,18 @@ npm run dev
 - `npm run preview` — preview the production build locally
 - `npm run lint` — run Oxlint
 
+## Pushing Changes to GitHub
+
+After making local changes:
+
+```bash
+git status              # see what changed
+git diff                # review the changes before staging
+git add <files>          # or `git add .` to stage everything changed
+git commit -m "describe your change"
+git push
+```
+
 ## Deploying to Netlify
 
 This project deploys as a static site via the Netlify CLI (already added as a dev dependency), building locally so your `.env` key gets baked into the bundle automatically — no separate Netlify environment variable setup needed.
