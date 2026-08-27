@@ -11,6 +11,15 @@ A Progressive Web App for EV owners to find charging stations while traveling ar
 - Trip planner — enter a start and end location, see the driving distance/duration and route on the map, and see only the chargers along that route
 - Installable PWA with offline caching of map tiles and the last-loaded charger data
 
+## Tech Stack
+
+- **React 19** + **TypeScript** + **Vite** — framework and build tooling
+- **vite-plugin-pwa** — PWA support (manifest, service worker, offline caching)
+- **Leaflet** + **react-leaflet** + **react-leaflet-cluster** — interactive map and marker clustering
+- **@tanstack/react-query** — data fetching and caching
+- **oxlint** — linting
+- **netlify-cli** — local Netlify dev/deploy tooling
+
 ## Setup
 
 1. Get a free API key from [openchargemap.org](https://openchargemap.org/site/loginprovider) (Account → Developer API Keys). **A key is required** — Open Charge Map now rejects unauthenticated requests with a 403.
